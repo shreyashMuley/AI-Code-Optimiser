@@ -7,10 +7,10 @@ const app = express();// express is being stored in other variable
 const PORT = 3002;
 app.use(cors()); //cors= cross origin resr=ource sharing 
 
-app.use(express.json());
+app.use(express.json());//parses
 
 app.use('/ai', aiRoutes); 
 
 app.listen(PORT, () => {
-  console.log("server started");
+  console.log("server started");//shows if server is started successfully.
 });
